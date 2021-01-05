@@ -1,0 +1,7 @@
+fragment SpecialPower on SpecialPower {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+}

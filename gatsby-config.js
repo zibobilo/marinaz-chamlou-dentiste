@@ -1,9 +1,15 @@
+
 module.exports = {
   siteMetadata: {
     title: "Marinaz Chamlou Dentiste",
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
+    {
+      resolve: 'gatsby-source-graphcms',
+      options: {
+        endpoint: "https://api-eu-central-1.graphcms.com/v2/ckjk85mzfkzjb01xpb0s92h9u/master",
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -13,15 +19,12 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
