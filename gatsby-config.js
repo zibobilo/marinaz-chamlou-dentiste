@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -7,7 +10,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-graphcms',
       options: {
-        endpoint: "https://api-eu-central-1.graphcms.com/v2/ckjk85mzfkzjb01xpb0s92h9u/master",
+        endpoint: process.env.GRAPHCMS_END_POINT,
       },
     },
     "gatsby-plugin-sass",

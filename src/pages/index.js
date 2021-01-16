@@ -13,11 +13,11 @@ import * as React from "react"
 //   `)
 //   console.log(posts)
 //   return (
-//     <ul>
+//     <>
 //       {posts.nodes.map(post => (
 //         <p>{post.title}</p>
 //       ))}
-//     </ul>
+//       </>
 //   )
 // }
 
@@ -28,6 +28,7 @@ const Home = () => {
       
       <div className="general">
         <div className="centered">       
+        {/* <IndexPage /> */}
         <br />
         <h1>Marinaz Chamlou</h1>
         <h2>Dentisterie esthétique <br />Implantologie</h2>
