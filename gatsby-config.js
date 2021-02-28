@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "dentistebxl.com",
+    title: "Marinaz Chamlou Dentiste",
   },
   plugins: [],
 };
