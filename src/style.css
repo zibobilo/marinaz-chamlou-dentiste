@@ -18,9 +18,9 @@ h6 {
 
 
 h1 {
-  font-size: 40px;
+  font-size: 60px;
   color: #ffffff;
-  line-height: 50px;
+  line-height: 60px;
   text-align: center;
   font-family:Source Sans Pro;
   font-weight:700;
@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: #ffffff;
   line-height: 50px;
   text-align: center;
@@ -38,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 35px;
 }
 
 h4 {
@@ -70,7 +70,7 @@ h6 > a {
 /* Prose */
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   color: #ffffff;
   line-height: 32px;
   text-align: center;
@@ -81,27 +81,26 @@ p {
 /* Link */
 
 a {
-  color: pink;
+  color: #C4E5FF;
   text-decoration: none;
   font-family: 'Roboto';
   font-weight:700;
-  line-height: 32px;
+  line-height: 1.4em;
 }
 
 a:hover {
   text-decoration: none;
-  color: rgb(255, 96, 123);
+  color: #59B7FF;
   transition: .1s linear;
 }
 
 /* homepage */
 
-.general {
-  height: 100vh;
+body {
   background-image: url(./images/marinaz-cabinet-arière-plan.jpg);
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .centered {
@@ -112,5 +111,25 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
+}
+table {
+  margin: auto;
+  padding: 50px;
+}
+
+td:first-child {
+  border-right: 3px solid white;
+}
+td {
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    padding: 10px 0;
+  }
+  td {
+    padding: 20px;
+  }
 }
